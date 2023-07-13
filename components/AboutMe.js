@@ -1,4 +1,6 @@
 import Image from "next/image";
+import barong from "../public/images/barong.jpg";
+import toga from "../public/images/toga.jpg";
 
 const AboutMe = () => {
   return (
@@ -26,15 +28,15 @@ const AboutMe = () => {
             <div className="m-2.5 relative flex">
               <div className="absolute">
                 <Image
-                  fill={true}
-                  src="/images/barong.jpg"
+                  width={"300"}
+                  src={barong}
                   className="h-96 ml-14 rounded-md block grayscale hover:grayscale-0 duration-300"
                   alt="Picture of the author"
                 />
               </div>
               <Image
-                fill={true}
-                src="/images/toga.jpg"
+                width={"150"}
+                src={toga}
                 className="h-36 rounded-md relative top-28"
                 alt="Picture of the author"
               />
