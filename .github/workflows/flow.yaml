@@ -19,8 +19,8 @@ jobs:
           echo "Hello madefpaker!"
         shell: bash
 
-      - name: Node
-        uses: actions/setup-node@v2
+      # - name: Node
+      #   uses: actions/setup-node@v2
 
       # - name: Install NPM
       #   run: >
