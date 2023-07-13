@@ -33,7 +33,7 @@ jobs:
 
       - name: Reload pm2
         run: >
-          sudo pm2 reload conx-client
+          sudo pm2 reload web
 
   goodbye:
     runs-on: ubuntu-latest
