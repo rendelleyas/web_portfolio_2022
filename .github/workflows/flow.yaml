@@ -16,12 +16,10 @@ jobs:
     steps:
       - name: hello world
         uses: actions/checkout@v3
-        run: >
-          echo "Hello madefpaker!"
-        shell: bash
 
       - name: Node
         uses: actions/setup-node@v2
+
 
   goodbye:
     runs-on: ubuntu-latest
