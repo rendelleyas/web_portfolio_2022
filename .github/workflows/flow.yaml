@@ -1,3 +1,4 @@
+
 name: First flow
 
 on:
@@ -10,29 +11,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  setup-web:
+  first:
     runs-on: ubuntu-latest
     steps:
-      - name: Workflow
       - uses: actions/checkout@v3
+      - name: hello world
         run: >
           echo "Hello madefpaker!"
         shell: bash
-
-      # - name: Node
-      #   uses: actions/setup-node@v2
-
-      # - name: Install NPM
-      #   run: >
-      #     npm install -g npm
-
-      # - name: Install node dependencies
-      #   run: >
-      #     npm ci && npm run build --ignore-scripts
-
-      # - name: Reload pm2
-      #   run: >
-      #     sudo pm2 reload web
 
   goodbye:
     runs-on: ubuntu-latest
