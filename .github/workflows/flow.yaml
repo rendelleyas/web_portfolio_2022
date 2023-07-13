@@ -1,4 +1,3 @@
-
 name: First flow
 
 on:
@@ -24,6 +23,10 @@ jobs:
         run: >
           sudo npm install -g npm
 
+      - name: Install PM@
+        run: >
+          sudo npm install -g pm2
+
       - name: Install node dependencies
         run: >
           sudo npm ci && npm run build --ignore-scripts
@@ -31,7 +34,6 @@ jobs:
       - name: Reload pm2
         run: >
           sudo pm2 reload conx-client
-
 
   goodbye:
     runs-on: ubuntu-latest
