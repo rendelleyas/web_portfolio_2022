@@ -26,13 +26,13 @@ jobs:
         run: >
           npm install -g npm
 
-      - name: Install node dependencies
-        run: >
-          npm ci && npm run build --ignore-scripts
+      # - name: Install node dependencies
+      #   run: >
+      #     npm ci && npm run build --ignore-scripts
 
-      - name: Reload pm2
-        run: >
-          sudo pm2 reload web
+      # - name: Reload pm2
+      #   run: >
+      #     sudo pm2 reload web
 
   goodbye:
     runs-on: ubuntu-latest
