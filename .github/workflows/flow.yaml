@@ -27,9 +27,7 @@ jobs:
             cd /var/www/web_portfolio_2022/
             git pull origin main
             git status
-            npm install --only=prod
-            npm run build
-            sudo pm2 reload web
+            npm ci && npm run build --ignore-scripts
 
       # - name: Node
       #   uses: actions/setup-node@v2
