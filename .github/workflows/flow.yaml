@@ -28,7 +28,7 @@ jobs:
             git pull origin main
             git status
             npm ci && npm run build --ignore-scripts
-            pm2 reload web
+            sudo pm2 reload web
 
       # - name: Node
       #   uses: actions/setup-node@v2
