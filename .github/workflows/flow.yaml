@@ -13,32 +13,45 @@ jobs:
   setup-web:
     runs-on: ubuntu-latest
     steps:
-      - name: hello world
+      - name: Checkout action
         uses: actions/checkout@v3
 
-      - name: Node
-        uses: actions/setup-node@v2
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /var/www/web_portfolio_2022/
+            git pull origin main
+            git status
+            npm install --only=prod
 
-      - name: Install NPM
-        run: >
-          sudo npm install -g npm
+      # - name: Node
+      #   uses: actions/setup-node@v2
 
-      - name: Install PM@
-        run: >
-          sudo npm install -g pm2
+      # - name: Install NPM
+      #   run: >
+      #     sudo npm install -g npm
 
-      - name: Install node dependencies
-        run: >
-          sudo npm ci && npm run build --ignore-scripts
+      # - name: Install PM2
+      #   run: >
+      #     sudo npm install -g pm2
 
-      - name: Reload pm2
-        run: >
-          sudo pm2 reload web
+      # - name: Install node dependencies
+      #   run: >
+      #     sudo npm ci && npm run build --ignore-scripts
 
-  goodbye:
-    runs-on: ubuntu-latest
-    steps:
-      - name: bye world
-        run: >
-          echo "Bye madefpaker!"
-        shell: bash
+      # - name: Reload pm2
+      #   run: >
+      #     sudo pm2 reload web
+
+  # goodbye:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: bye world
+  #       run: >
+  #         echo "Bye madefpaker!"
+  #       shell: bash
