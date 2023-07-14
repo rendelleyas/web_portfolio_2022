@@ -25,9 +25,9 @@ jobs:
           port: 22
           script: |
             cd /var/www/portfolio/
-            git pull origin main
-            npm install --only=prod
-            npm run build
+            sudo git pull origin main
+            sudo npm install --only=prod
+            sudo npm run build
             sudo pm2 reload web
 
       # - name: Node
