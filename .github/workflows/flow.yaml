@@ -24,7 +24,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /var/www/web_portfolio_2022/
+            cd /var/www/portfolio/
             git pull origin main
             npm install --only=prod
             npm run build
