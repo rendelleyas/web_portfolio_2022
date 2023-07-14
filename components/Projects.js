@@ -2,6 +2,10 @@ import React from "react";
 import { Tabs, Tab } from "./Tabs";
 import Project from "./Project/ProjectTemplate";
 import Image from "next/image";
+import conx from "../public/images/conx.jpg";
+import strangedomain from "../public/images/strangedomain.jpg";
+import certovax from "../public/images/certovax.jpg";
+import cpms from "../public/images/cpms.jpg";
 
 const Projects = () => {
   return (
@@ -26,12 +30,7 @@ const Projects = () => {
                 </div>
               </Project>
               <Project>
-                <Image
-                  fill={true}
-                  className="w-[750px]"
-                  src="/images/conx.jpg"
-                  alt=""
-                />
+                <Image fill={true} className="w-[750px]" src={conx} alt="" />
                 <div className=" absolute opacity-0 group-hover:opacity-100 top-[50%] left-[50%] font-bold ">
                   PRTC - SMAH
                 </div>
@@ -44,9 +43,9 @@ const Projects = () => {
             <div className="grid grid-cols-2 mb-8">
               <Project>
                 <Image
-                  fill={true}
+                  width={"300"}
                   className="w-[750px]"
-                  src="/images/strangedomain.jpg"
+                  src={strangedomain}
                   alt=""
                 />
                 <div className=" absolute opacity-0 group-hover:opacity-100 top-[50%] left-[50%] font-bold ">
@@ -55,22 +54,22 @@ const Projects = () => {
               </Project>
               <Project>
                 <Image
-                  fill={true}
+                  width={"300"}
                   className="w-[750px]"
-                  src="/images/conx.jpg"
+                  src={strangedomain}
                   alt=""
                 />
                 <div className=" absolute opacity-0 group-hover:opacity-100 top-[50%] left-[50%] font-bold ">
-                  ConX
+                  StrangeDomains
                 </div>
               </Project>
             </div>
             <div className="grid grid-cols-2 mb-8">
               <Project>
                 <Image
-                  fill={true}
+                  width={"300"}
                   className="w-[750px]"
-                  src="/images/certovax.jpg"
+                  src={certovax}
                   alt=""
                 />
                 <div className=" absolute opacity-0 group-hover:opacity-100 top-[50%] left-[50%] font-bold ">
@@ -94,12 +93,7 @@ const Projects = () => {
         <Tab label="DSWD">
           <div className="py-4">
             <Project>
-              <Image
-                fill={true}
-                className="w-[750px]"
-                src="/images/cpms.jpg"
-                alt=""
-              />
+              <Image width={"300"} className="w-[750px]" src={cpms} alt="" />
               <div className=" absolute opacity-0 group-hover:opacity-100 top-[50%] left-[50%] font-bold ">
                 DSWD-CPMS
               </div>
