@@ -3,7 +3,7 @@ const UpperBody = () => {
     return (
         <>
             <div className="h-96 bg-custom-gray font-inter">
-                <div className="mx-20">
+                <div className="mx-40">
                     <p className="text-secondary text-lg">Hi, my name is</p>
                     <div className="text-white text-xl font-bold">
                         <p className="-mb-52">Rendell</p> <br/> 
