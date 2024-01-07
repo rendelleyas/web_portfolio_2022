@@ -16,8 +16,8 @@ const AboutMe = () => {
               <h1 className="font-bold mb-5 text-lg">ABOUT ME</h1>
 
               <div className="justify-center">
-                Has more than two years of experience in the IT industry and is
-                eager to learn more and explore new things that will help me
+                Has more than three years of experience in the IT industry and
+                is eager to learn more and explore new things that will help me
                 improve my abilities and mindset as a professional. With this, I
                 would gladly extend my efforts in order to contribute to the
                 company&apos;s success.
@@ -30,7 +30,7 @@ const AboutMe = () => {
                 <Image
                   width={"300"}
                   src={barong}
-                  className="h-96 ml-14 rounded-md block grayscale hover:grayscale-0 duration-300"
+                  className="h-96 ml-14 rounded-md block grayscale hover:grayscale-0 duration-300 "
                   alt="Picture of the author"
                 />
               </div>

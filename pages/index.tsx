@@ -20,7 +20,7 @@ export default function Index() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <div className="scroll-smooth">
         <Navigation />
         <div>
           <Home />

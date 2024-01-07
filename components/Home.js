@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <UpperBody />
-      <div className="mx-40">
+      <div className="mx-40 transition-all" id="home">
         <AboutMe />
         <Experience />
         <Projects />
