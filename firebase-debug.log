@@ -1,0 +1,55 @@
+[debug] [2024-01-07T05:01:44.331Z] ----------------------------------------------------------------------
+[debug] [2024-01-07T05:01:44.332Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-07T05:01:44.333Z] CLI Version:   13.0.2
+[debug] [2024-01-07T05:01:44.333Z] Platform:      win32
+[debug] [2024-01-07T05:01:44.333Z] Node Version:  v18.19.0
+[debug] [2024-01-07T05:01:44.334Z] Time:          Sun Jan 07 2024 13:01:44 GMT+0800 (Singapore Standard Time)
+[debug] [2024-01-07T05:01:44.334Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-07T05:01:44.399Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-07T05:01:44.399Z] > authorizing via signed-in user (rendell.eyas@gmail.com)
+[debug] [2024-01-07T05:01:44.399Z] [iam] checking project rendell-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-07T05:01:44.401Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rendell-portfolio:testIamPermissions [none]
+[debug] [2024-01-07T05:01:44.401Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rendell-portfolio:testIamPermissions x-goog-quota-user=projects/rendell-portfolio
+[debug] [2024-01-07T05:01:44.402Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rendell-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-07T05:01:45.413Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rendell-portfolio:testIamPermissions 200
+[debug] [2024-01-07T05:01:45.414Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rendell-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-07T05:01:45.414Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rendell-portfolio [none]
+[debug] [2024-01-07T05:01:45.870Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rendell-portfolio 200
+[debug] [2024-01-07T05:01:45.870Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rendell-portfolio {"projectId":"rendell-portfolio","projectNumber":"912067870399","displayName":"Rendell portfolio","name":"projects/rendell-portfolio","resources":{"hostingSite":"rendell-portfolio"},"state":"ACTIVE","etag":"1_62117ac5-c459-47c5-86cc-9f27d4fc8db4"}
+[debug] [2024-01-07T05:01:50.113Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/rendell-portfolio/sites pageToken=&pageSize=10
+[debug] [2024-01-07T05:01:51.076Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/rendell-portfolio/sites 200
+[debug] [2024-01-07T05:01:51.076Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/rendell-portfolio/sites {"sites":[{"name":"projects/rendell-portfolio/sites/rendell-portfolio","defaultUrl":"https://rendell-portfolio.web.app","appId":"1:912067870399:web:8039212e53f2641735900a","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-07T05:01:51.077Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:912067870399:web:8039212e53f2641735900a/config [none]
+[debug] [2024-01-07T05:01:51.891Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:912067870399:web:8039212e53f2641735900a/config 200
+[debug] [2024-01-07T05:01:51.891Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:912067870399:web:8039212e53f2641735900a/config {"projectId":"rendell-portfolio","appId":"1:912067870399:web:8039212e53f2641735900a","storageBucket":"rendell-portfolio.appspot.com","apiKey":"AIzaSyASFENYRgkDYUf6XGN4fiuAZoRcHX4awBI","authDomain":"rendell-portfolio.firebaseapp.com","messagingSenderId":"912067870399"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-01-07T05:02:00.656Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/rendell-portfolio/sites/rendell-portfolio [none]
+[debug] [2024-01-07T05:02:01.486Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/rendell-portfolio/sites/rendell-portfolio 200
+[debug] [2024-01-07T05:02:01.486Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/rendell-portfolio/sites/rendell-portfolio {"name":"projects/rendell-portfolio/sites/rendell-portfolio","defaultUrl":"https://rendell-portfolio.web.app","appId":"1:912067870399:web:8039212e53f2641735900a","type":"DEFAULT_SITE"}
+[info] info  - Linting and checking validity of types...
+
+[info] 
+Failed to compile.
+
+[info] 
+./pages/index.tsx
+17:9  Warning: Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font
+
+./components/Projects.js
+26:9  Error: Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2024-01-07T05:02:12.119Z] Error: ENOENT: no such file or directory, open 'D:\Personal\Rendell\Web Related\react\next-porfolio-inside\web_portfolio_2022\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -26,6 +26,7 @@ const Projects = () => {
         <a
           href="https://docs.google.com/presentation/d/14_r6SUCYp93EOs9wpYo730dC0AB2Z1gw/edit?usp=drive_link&ouid=117854322814640526283&rtpof=true&sd=true"
           target="_blank"
+          rel="noreferrer"
           className="text-blue-700"
         >
           (View My Portfolio)
